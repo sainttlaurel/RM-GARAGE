@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RM Car Dealing & PC Parts</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo">🚗 RM Car & PC</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#for-sale">For Sale</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <i class="fas fa-moon toggle-theme"></i>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+  <div class="hero-content hero-flex">
+    <div class="hero-card hero-text-card">
+      <h1>Drive Your Dream.<br>Build Your PC.</h1>
+      <p>Cars & PC Parts – trusted by many, built for you.</p>
+      <a href="#for-sale" class="btn">Explore Now</a>
+    </div>
+    <div class="hero-card hero-slideshow-card">
+      <div class="hero-slideshow">
+        <div class="slide active">
+          <img src="image/HONDA CIVIC.jpg" alt="1997 Honda Civic VTi"/>
+          <div class="slide-caption">
+            <h2>1997 Honda Civic VTi VTEC (PH16A)</h2>
+            <p>₱210,000 – Quezon City</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="image/TOYOTA LC200.jpg" alt="2016 Toyota Land Cruiser LC200"/>
+          <div class="slide-caption">
+            <h2>2016 Toyota Land Cruiser LC200</h2>
+            <p>₱3,815,000 – Quezon City</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="image/TOYOTA FJ CRUISER.jpg" alt="2016 Toyota FJ Cruiser"/>
+          <div class="slide-caption">
+            <h2>2016 Toyota FJ Cruiser 4.0L V6 4x4 A/T</h2>
+            <p>₱1,780,000 – Quezon City</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="image/FORD RANGER WILDTRACK.jpg" alt="2018 Ford Ranger Wildtrak"/>
+          <div class="slide-caption">
+            <h2>2018 Ford Ranger Wildtrak 4x4</h2>
+            <p>₱995,000 – Quezon City</p>
+          </div>
+        </div>
+        <button class="slide-btn prev">&#10094;</button>
+        <button class="slide-btn next">&#10095;</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- For Sale -->
+  <section id="for-sale" class="for-sale">
+    <h1 class="heading"><i class="fas fa-car"></i> For Sale</h1>
+    
+    <!-- Search/Filter -->
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search cars/bikes...">
+      <select id="priceFilter">
+        <option value="all">All Prices</option>
+        <option value="low">Below ₱250k</option>
+        <option value="mid">₱250k - ₱400k</option>
+        <option value="high">Above ₱400k</option>
+      </select>
+    </div>
+
+    <div id="carList" class="car-list">
+
+      <!-- 1997 Honda Civic VTi VTEC (PH16A) -->
+      <div class="car-card fade-in" id="civic" data-name="Honda Civic VTi VTEC" data-price="210000">
+        <div class="car-image-wrap">
+          <img src="image/HONDA CIVIC.jpg" alt="1997 Honda Civic VTi"/>
+          <span class="badge available">Available</span>
+        </div>
+        <h2>1997 Honda Civic VTi VTEC (PH16A)</h2>
+        <div class="car-meta">
+          <span class="price">₱210,000</span>
+          <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+        </div>
+        <ul class="specs">
+          <li><i class="fas fa-check-circle"></i> All stock engine, 1st owner</li>
+          <li><i class="fas fa-check-circle"></i> Fresh repaint – gas & go</li>
+          <li><i class="fas fa-check-circle"></i> Cold AC, power windows/mirrors</li>
+          <li><i class="fas fa-check-circle"></i> Type R seats, MOMO steering wheel</li>
+          <li><i class="fas fa-check-circle"></i> JBL + Pioneer sound setup</li>
+          <li><i class="fas fa-check-circle"></i> Registered until 2026, complete papers</li>
+        </ul>
+        <p class="desc">Fresh & reliable – perfect pang-daily/tambay!</p>
+        <button class="btn" onclick="window.open('https://www.facebook.com/RMCarDealingAndPcParts/', '_blank')">Inquire</button>
+        <div class="trust">
+          <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+        </div>
+      </div>
+
+      <!-- 2016 Toyota Land Cruiser LC200 (SOLD) -->
+      <div class="car-card sold fade-in" id="lc200" data-name="Toyota Land Cruiser LC200" data-price="3815000">
+        <div class="car-image-wrap">
+          <img src="image/TOYOTA LC200.jpg" alt="2016 Toyota Land Cruiser LC200"/>
+          <span class="badge sold">SOLD</span>
+        </div>
+        <h2>2016 Toyota Land Cruiser LC200</h2>
+        <div class="car-meta">
+          <span class="price">₱3,815,000 <span style="font-size:0.9em;">(negotiable)</span></span>
+          <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+        </div>
+        <ul class="specs">
+          <li><i class="fas fa-check-circle"></i> 4.5L V8 Turbo Diesel, 4x4 AT</li>
+          <li><i class="fas fa-check-circle"></i> 128k kms, Toyota Commonwealth maintained</li>
+          <li><i class="fas fa-check-circle"></i> 100% orig paint, fresh in & out</li>
+          <li><i class="fas fa-check-circle"></i> Beige leather interior, 2 headrest monitors</li>
+          <li><i class="fas fa-check-circle"></i> 20" OEM rims + Dunlop Grandtrek (almost new)</li>
+          <li><i class="fas fa-check-circle"></i> Ice-cold AC, no underchassis issues</li>
+          <li><i class="fas fa-check-circle"></i> 2 orig keys, updated reg, free transfer</li>
+        </ul>
+        <p class="desc">Luxury + durability – built to last! 🚙💨<br>📩 Open for trade (with cash top-up)</p>
+        <div class="trust">
+          <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+        </div>
+      </div>
+
+      <!-- 2016 Toyota FJ Cruiser 4.0L V6 4x4 A/T -->
+      <div class="car-card fade-in" id="fjcruiser" data-name="Toyota FJ Cruiser" data-price="1780000">
+        <div class="car-image-wrap">
+          <img src="image/TOYOTA FJ CRUISER.jpg" alt="2016 Toyota FJ Cruiser"/>
+          <span class="badge available">Available</span>
+        </div>
+        <h2>2016 Toyota FJ Cruiser 4.0L V6 4x4 A/T</h2>
+        <div class="car-meta">
+          <span class="price">₱1,780,000 <span style="font-size:0.9em;">(negotiable)</span></span>
+          <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+        </div>
+        <ul class="specs">
+          <li><i class="fas fa-check-circle"></i> 47k kms only, fresh PMS done</li>
+          <li><i class="fas fa-check-circle"></i> Brand new Amaron battery</li>
+          <li><i class="fas fa-check-circle"></i> 100% orig paint, complete papers</li>
+          <li><i class="fas fa-check-circle"></i> Old Man Emu BP-51 suspension + UCAs</li>
+          <li><i class="fas fa-check-circle"></i> SCS wheels + BFGoodrich KM3 set of 5</li>
+          <li><i class="fas fa-check-circle"></i> Borla headers + full Borla exhaust</li>
+          <li><i class="fas fa-check-circle"></i> AFE Momentum GT intake</li>
+          <li><i class="fas fa-check-circle"></i> Stage 4 projector retrofit headlights</li>
+          <li><i class="fas fa-check-circle"></i> ₱200K sound setup – Pioneer Z5050, Focal, Crescendo</li>
+        </ul>
+        <p class="desc">Solid, built, and loaded – ready to roll! 🚙💨<br>📩 Open to trade + cash offers</p>
+        <button class="btn" onclick="window.open('https://www.facebook.com/RMCarDealingAndPcParts/', '_blank')">Inquire</button>
+        <div class="trust">
+          <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+        </div>
+      </div>
+
+      <!-- 2018 Ford Ranger Wildtrak 4x4 -->
+      <div class="car-card fade-in" id="wildtrak" data-name="Ford Ranger Wildtrak" data-price="995000">
+        <div class="car-image-wrap">
+          <img src="image/FORD RANGER WILDTRACK.jpg" alt="2018 Ford Ranger Wildtrak"/>
+          <span class="badge available">Available</span>
+        </div>
+        <h2>2018 Ford Ranger Wildtrak 4x4 (Loaded & Upgraded)</h2>
+        <div class="car-meta">
+          <span class="price">₱995,000 <span style="font-size:0.9em;">(slightly nego)</span></span>
+          <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+        </div>
+        <ul class="specs">
+          <li><i class="fas fa-check-circle"></i> 3.2L Turbo Diesel, 6AT</li>
+          <li><i class="fas fa-check-circle"></i> 42k kms only, all original & excellent condition</li>
+          <li><i class="fas fa-check-circle"></i> Complete papers, 2 orig keys, manuals</li>
+          <li><i class="fas fa-wrench"></i> <b>Upgrades:</b></li>
+          <li><i class="fas fa-check-circle"></i> TJM front/rear bumpers + rocksliders</li>
+          <li><i class="fas fa-check-circle"></i> TJM Pace suspension + ARB OME leafs + UCAs</li>
+          <li><i class="fas fa-check-circle"></i> 2" body lift + Bushwacker flares</li>
+          <li><i class="fas fa-check-circle"></i> Mastercraft MXT 35x12.5x20 tires</li>
+          <li><i class="fas fa-check-circle"></i> Safari snorkel + BRC exhaust</li>
+          <li><i class="fas fa-check-circle"></i> Roller lid w/ lock</li>
+          <li><i class="fas fa-check-circle"></i> All-LED headlights & fogs</li>
+        </ul>
+        <p class="desc">Off-road ready, no issues – just gas & go! 🚙💨<br>📩 Open for swap/trade + cash offers</p>
+        <button class="btn" onclick="window.open('https://www.facebook.com/RMCarDealingAndPcParts/', '_blank')">Inquire</button>
+        <div class="trust">
+          <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="reviews" id="reviews">
+    <h1 class="heading"><i class="fas fa-comments"></i> Client Reviews</h1>
+    <div class="review-list">
+      <div class="review-card fade-in">
+        <p>"RM GARAGE made my car buying experience so easy and stress-free. Highly recommended!"</p>
+        <h3>– Mark D.</h3>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <div class="review-card fade-in">
+        <p>"Superb service and honest deals. Will definitely buy from RM GARAGE again!"</p>
+        <h3>– Angela S.</h3>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      <div class="review-card fade-in">
+        <p>"Fast transaction and quality vehicles. Thank you RM GARAGE for my new ride!"</p>
+        <h3>– Carlo P.</h3>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Contact -->
+<section id="contact" class="contact-section">
+  <div class="contact-flex">
+    <div class="contact-wrapper">
+      <h1 class="heading"><i class="fas fa-envelope"></i> Contact Us</h1>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+    <div class="map-wrapper">
+      <h2 class="map-title">Our Location</h2>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=M3H2+HG8,+Philand+Dr,+Quezon+City,+Metro+Manila,+Philippines&output=embed"
+          width="100%"
+          height="320"
+          style="border:0; border-radius:14px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>RM Car Dealing & PC Parts © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
