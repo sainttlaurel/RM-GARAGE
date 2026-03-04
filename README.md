@@ -28,7 +28,7 @@ RM Garage PH is a modern and responsive website designed to showcase cars and pr
 - Smooth theme switching
 - Cleaner and organized component structure
 
-##Tech Stack
+## Tech Stack
 
 - HTML
 - CSS / Tailwind CSS
