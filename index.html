@@ -3,96 +3,176 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>RM Car Dealing & PC Parts</title>
+  <title>RM GARAGE | Performance & Precision</title>
   <link rel="stylesheet" href="style.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <!-- Loading Screen -->
+  <div class="loading-screen">
+    <div class="loading-content">
+      <div class="loading-logo">
+        <span class="logo-rm">RM</span>
+        <span class="logo-garage">GARAGE</span>
+      </div>
+      <div class="loading-bar">
+        <div class="loading-progress"></div>
+      </div>
+      <div class="loading-text">INITIALIZING PERFORMANCE MODE</div>
+      <div class="loading-stats">
+        <span class="stat">0-100 KM/H</span>
+        <span class="stat-divider">|</span>
+        <span class="stat">PRECISION ENGINEERING</span>
+        <span class="stat-divider">|</span>
+        <span class="stat">RACE READY</span>
+      </div>
+    </div>
+  </div>
   <!-- Header -->
   <header class="navbar">
-    <div class="logo">🚗 RM Car & PC</div>
+    <div class="logo">
+      <span class="logo-rm">RM</span>
+      <span class="logo-divider">/</span>
+      <span class="logo-garage">GARAGE</span>
+    </div>
     <nav>
-      <a href="#home">Home</a>
-      <a href="#for-sale">For Sale</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#contact">Contact</a>
+      <a href="#home" class="nav-link"><span class="nav-number">01</span> HOME</a>
+      <a href="#for-sale" class="nav-link"><span class="nav-number">02</span> FLEET</a>
+      <a href="#reviews" class="nav-link"><span class="nav-number">03</span> REVIEWS</a>
+      <a href="#contact" class="nav-link"><span class="nav-number">04</span> CONTACT</a>
     </nav>
-    <i class="fas fa-moon toggle-theme"></i>
+    <div class="nav-controls">
+      <i class="fas fa-moon toggle-theme"></i>
+      <div class="speed-indicator">
+        <i class="fas fa-tachometer-alt"></i>
+        <span id="speedValue">0</span>
+      </div>
+    </div>
   </header>
 
   <!-- Hero -->
   <section id="home" class="hero">
-  <div class="hero-content hero-flex">
-    <div class="hero-card hero-text-card">
-      <h1>Drive Your Dream.<br>Build Your PC.</h1>
-      <p>Cars & PC Parts – trusted by many, built for you.</p>
-      <a href="#for-sale" class="btn">Explore Now</a>
-    </div>
-    <div class="hero-card hero-slideshow-card">
-      <div class="hero-slideshow">
-        <div class="slide active">
-          <img src="image/HONDA CIVIC.jpg" alt="1997 Honda Civic VTi"/>
-          <div class="slide-caption">
-            <h2>1997 Honda Civic VTi VTEC (PH16A)</h2>
-            <p>₱210,000 – Quezon City</p>
+    <div class="racing-lines"></div>
+    <div class="hero-content hero-flex">
+      <div class="hero-card hero-text-card">
+        <div class="hero-badge">PERFORMANCE DIVISION</div>
+        <h1>
+          <span class="hero-title-main">ENGINEERED</span>
+          <span class="hero-title-sub">FOR SPEED</span>
+        </h1>
+        <p class="hero-tagline">Precision vehicles. Race-ready performance. Uncompromising quality.</p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number">4</span>
+            <span class="stat-label">VEHICLES</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">VERIFIED</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">SUPPORT</span>
           </div>
         </div>
-        <div class="slide">
-          <img src="image/TOYOTA LC200.jpg" alt="2016 Toyota Land Cruiser LC200"/>
-          <div class="slide-caption">
-            <h2>2016 Toyota Land Cruiser LC200</h2>
-            <p>₱3,815,000 – Quezon City</p>
+        <a href="#for-sale" class="btn btn-primary">
+          <span>EXPLORE FLEET</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="hero-card hero-slideshow-card">
+        <div class="hero-slideshow">
+          <div class="slide active">
+            <div class="slide-overlay"></div>
+            <img src="image/HONDA CIVIC.jpg" alt="1997 Honda Civic VTi"/>
+            <div class="slide-caption">
+              <span class="slide-number">01</span>
+              <h2>CIVIC VTi VTEC</h2>
+              <p class="slide-price">₱210,000</p>
+              <span class="slide-location">QUEZON CITY</span>
+            </div>
           </div>
-        </div>
-        <div class="slide">
-          <img src="image/TOYOTA FJ CRUISER.jpg" alt="2016 Toyota FJ Cruiser"/>
-          <div class="slide-caption">
-            <h2>2016 Toyota FJ Cruiser 4.0L V6 4x4 A/T</h2>
-            <p>₱1,780,000 – Quezon City</p>
+          <div class="slide">
+            <div class="slide-overlay"></div>
+            <img src="image/TOYOTA LC200.jpg" alt="2016 Toyota Land Cruiser LC200"/>
+            <div class="slide-caption">
+              <span class="slide-number">02</span>
+              <h2>LAND CRUISER LC200</h2>
+              <p class="slide-price">₱3,815,000</p>
+              <span class="slide-location">QUEZON CITY</span>
+            </div>
           </div>
-        </div>
-        <div class="slide">
-          <img src="image/FORD RANGER WILDTRACK.jpg" alt="2018 Ford Ranger Wildtrak"/>
-          <div class="slide-caption">
-            <h2>2018 Ford Ranger Wildtrak 4x4</h2>
-            <p>₱995,000 – Quezon City</p>
+          <div class="slide">
+            <div class="slide-overlay"></div>
+            <img src="image/TOYOTA FJ CRUISER.jpg" alt="2016 Toyota FJ Cruiser"/>
+            <div class="slide-caption">
+              <span class="slide-number">03</span>
+              <h2>FJ CRUISER 4X4</h2>
+              <p class="slide-price">₱1,780,000</p>
+              <span class="slide-location">QUEZON CITY</span>
+            </div>
           </div>
+          <div class="slide">
+            <div class="slide-overlay"></div>
+            <img src="image/FORD RANGER WILDTRACK.jpg" alt="2018 Ford Ranger Wildtrak"/>
+            <div class="slide-caption">
+              <span class="slide-number">04</span>
+              <h2>RANGER WILDTRAK</h2>
+              <p class="slide-price">₱995,000</p>
+              <span class="slide-location">QUEZON CITY</span>
+            </div>
+          </div>
+          <button class="slide-btn prev"><i class="fas fa-chevron-left"></i></button>
+          <button class="slide-btn next"><i class="fas fa-chevron-right"></i></button>
+          <div class="slide-indicators"></div>
         </div>
-        <button class="slide-btn prev">&#10094;</button>
-        <button class="slide-btn next">&#10095;</button>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- For Sale -->
   <section id="for-sale" class="for-sale">
-    <h1 class="heading"><i class="fas fa-car"></i> For Sale</h1>
+    <div class="section-header">
+      <span class="section-number">02</span>
+      <h1 class="heading">AVAILABLE FLEET</h1>
+      <div class="section-line"></div>
+    </div>
     
     <!-- Search/Filter -->
     <div class="filters">
-      <input type="text" id="searchInput" placeholder="Search cars/bikes...">
-      <select id="priceFilter">
-        <option value="all">All Prices</option>
-        <option value="low">Below ₱250k</option>
-        <option value="mid">₱250k - ₱400k</option>
-        <option value="high">Above ₱400k</option>
-      </select>
+      <div class="filter-group">
+        <i class="fas fa-search"></i>
+        <input type="text" id="searchInput" placeholder="SEARCH VEHICLES...">
+      </div>
+      <div class="filter-group">
+        <i class="fas fa-filter"></i>
+        <select id="priceFilter">
+          <option value="all">ALL PRICES</option>
+          <option value="low">BELOW ₱250K</option>
+          <option value="mid">₱250K - ₱400K</option>
+          <option value="high">ABOVE ₱400K</option>
+        </select>
+      </div>
     </div>
 
     <div id="carList" class="car-list">
 
       <!-- 1997 Honda Civic VTi VTEC (PH16A) -->
       <div class="car-card fade-in" id="civic" data-name="Honda Civic VTi VTEC" data-price="210000">
+        <div class="car-number">01</div>
         <div class="car-image-wrap">
           <img src="image/HONDA CIVIC.jpg" alt="1997 Honda Civic VTi"/>
-          <span class="badge available">Available</span>
+          <span class="badge available">AVAILABLE</span>
+          <div class="car-overlay"></div>
         </div>
-        <h2>1997 Honda Civic VTi VTEC (PH16A)</h2>
+        <div class="car-header">
+          <h2>CIVIC VTi VTEC</h2>
+          <span class="car-year">1997</span>
+        </div>
         <div class="car-meta">
           <span class="price">₱210,000</span>
-          <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+          <span class="location"><i class="fas fa-map-marker-alt"></i> QC</span>
         </div>
         <ul class="specs">
           <li><i class="fas fa-check-circle"></i> All stock engine, 1st owner</li>
@@ -103,22 +183,27 @@
           <li><i class="fas fa-check-circle"></i> Registered until 2026, complete papers</li>
         </ul>
         <p class="desc">Fresh & reliable – perfect pang-daily/tambay!</p>
-        <button class="btn" onclick="window.open('https://www.facebook.com/RMCarDealingAndPcParts/', '_blank')">Inquire</button>
-        <div class="trust">
-          <i class="fas fa-shield-alt"></i> Safe & Verified Seller
-        </div>
+        <button class="btn btn-secondary" onclick="window.open('https://www.facebook.com/RMCarDealingAndPcParts/', '_blank')">
+          <span>VIEW DETAILS</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
       </div>
 
       <!-- 2016 Toyota Land Cruiser LC200 (SOLD) -->
       <div class="car-card sold fade-in" id="lc200" data-name="Toyota Land Cruiser LC200" data-price="3815000">
+        <div class="car-number">02</div>
         <div class="car-image-wrap">
           <img src="image/TOYOTA LC200.jpg" alt="2016 Toyota Land Cruiser LC200"/>
           <span class="badge sold">SOLD</span>
+          <div class="car-overlay"></div>
         </div>
-        <h2>2016 Toyota Land Cruiser LC200</h2>
+        <div class="car-header">
+          <h2>LAND CRUISER LC200</h2>
+          <span class="car-year">2016</span>
+        </div>
         <div class="car-meta">
-          <span class="price">₱3,815,000 <span style="font-size:0.9em;">(negotiable)</span></span>
-          <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+          <span class="price">₱3,815,000</span>
+          <span class="location"><i class="fas fa-map-marker-alt"></i> QC</span>
         </div>
         <ul class="specs">
           <li><i class="fas fa-check-circle"></i> 4.5L V8 Turbo Diesel, 4x4 AT</li>
@@ -130,21 +215,23 @@
           <li><i class="fas fa-check-circle"></i> 2 orig keys, updated reg, free transfer</li>
         </ul>
         <p class="desc">Luxury + durability – built to last! 🚙💨<br>📩 Open for trade (with cash top-up)</p>
-        <div class="trust">
-          <i class="fas fa-shield-alt"></i> Safe & Verified Seller
-        </div>
       </div>
 
       <!-- 2016 Toyota FJ Cruiser 4.0L V6 4x4 A/T -->
       <div class="car-card fade-in" id="fjcruiser" data-name="Toyota FJ Cruiser" data-price="1780000">
+        <div class="car-number">03</div>
         <div class="car-image-wrap">
           <img src="image/TOYOTA FJ CRUISER.jpg" alt="2016 Toyota FJ Cruiser"/>
-          <span class="badge available">Available</span>
+          <span class="badge available">AVAILABLE</span>
+          <div class="car-overlay"></div>
         </div>
-        <h2>2016 Toyota FJ Cruiser 4.0L V6 4x4 A/T</h2>
+        <div class="car-header">
+          <h2>FJ CRUISER 4X4</h2>
+          <span class="car-year">2016</span>
+        </div>
         <div class="car-meta">
-          <span class="price">₱1,780,000 <span style="font-size:0.9em;">(negotiable)</span></span>
-          <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+          <span class="price">₱1,780,000</span>
+          <span class="location"><i class="fas fa-map-marker-alt"></i> QC</span>
         </div>
         <ul class="specs">
           <li><i class="fas fa-check-circle"></i> 47k kms only, fresh PMS done</li>
@@ -158,22 +245,27 @@
           <li><i class="fas fa-check-circle"></i> ₱200K sound setup – Pioneer Z5050, Focal, Crescendo</li>
         </ul>
         <p class="desc">Solid, built, and loaded – ready to roll! 🚙💨<br>📩 Open to trade + cash offers</p>
-        <button class="btn" onclick="window.open('https://www.facebook.com/RMCarDealingAndPcParts/', '_blank')">Inquire</button>
-        <div class="trust">
-          <i class="fas fa-shield-alt"></i> Safe & Verified Seller
-        </div>
+        <button class="btn btn-secondary" onclick="window.open('https://www.facebook.com/RMCarDealingAndPcParts/', '_blank')">
+          <span>VIEW DETAILS</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
       </div>
 
       <!-- 2018 Ford Ranger Wildtrak 4x4 -->
       <div class="car-card fade-in" id="wildtrak" data-name="Ford Ranger Wildtrak" data-price="995000">
+        <div class="car-number">04</div>
         <div class="car-image-wrap">
           <img src="image/FORD RANGER WILDTRACK.jpg" alt="2018 Ford Ranger Wildtrak"/>
-          <span class="badge available">Available</span>
+          <span class="badge available">AVAILABLE</span>
+          <div class="car-overlay"></div>
         </div>
-        <h2>2018 Ford Ranger Wildtrak 4x4 (Loaded & Upgraded)</h2>
+        <div class="car-header">
+          <h2>RANGER WILDTRAK</h2>
+          <span class="car-year">2018</span>
+        </div>
         <div class="car-meta">
-          <span class="price">₱995,000 <span style="font-size:0.9em;">(slightly nego)</span></span>
-          <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+          <span class="price">₱995,000</span>
+          <span class="location"><i class="fas fa-map-marker-alt"></i> QC</span>
         </div>
         <ul class="specs">
           <li><i class="fas fa-check-circle"></i> 3.2L Turbo Diesel, 6AT</li>
@@ -189,17 +281,21 @@
           <li><i class="fas fa-check-circle"></i> All-LED headlights & fogs</li>
         </ul>
         <p class="desc">Off-road ready, no issues – just gas & go! 🚙💨<br>📩 Open for swap/trade + cash offers</p>
-        <button class="btn" onclick="window.open('https://www.facebook.com/RMCarDealingAndPcParts/', '_blank')">Inquire</button>
-        <div class="trust">
-          <i class="fas fa-shield-alt"></i> Safe & Verified Seller
-        </div>
+        <button class="btn btn-secondary" onclick="window.open('https://www.facebook.com/RMCarDealingAndPcParts/', '_blank')">
+          <span>VIEW DETAILS</span>
+          <i class="fas fa-arrow-right"></i>
+        </button>
       </div>
     </div>
   </section>
 
   <!-- Reviews -->
   <section class="reviews" id="reviews">
-    <h1 class="heading"><i class="fas fa-comments"></i> Client Reviews</h1>
+    <div class="section-header">
+      <span class="section-number">03</span>
+      <h1 class="heading">CLIENT TESTIMONIALS</h1>
+      <div class="section-line"></div>
+    </div>
     <div class="review-list">
       <div class="review-card fade-in">
         <p>"RM GARAGE made my car buying experience so easy and stress-free. Highly recommended!"</p>
@@ -221,18 +317,34 @@
 
  <!-- Contact -->
 <section id="contact" class="contact-section">
+  <div class="section-header">
+    <span class="section-number">04</span>
+    <h1 class="heading">GET IN TOUCH</h1>
+    <div class="section-line"></div>
+  </div>
   <div class="contact-flex">
     <div class="contact-wrapper">
-      <h1 class="heading"><i class="fas fa-envelope"></i> Contact Us</h1>
       <form id="contactForm">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="email" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button class="btn" type="submit">Send Message</button>
+        <div class="form-group">
+          <label>NAME</label>
+          <input type="text" name="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label>EMAIL</label>
+          <input type="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label>MESSAGE</label>
+          <textarea name="message" placeholder="Enter your message" required></textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">
+          <span>SEND MESSAGE</span>
+          <i class="fas fa-paper-plane"></i>
+        </button>
       </form>
     </div>
     <div class="map-wrapper">
-      <h2 class="map-title">Our Location</h2>
+      <h2 class="map-title">LOCATION</h2>
       <div class="map-container">
         <iframe
           src="https://www.google.com/maps?q=M3H2+HG8,+Philand+Dr,+Quezon+City,+Metro+Manila,+Philippines&output=embed"
@@ -250,7 +362,19 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p>RM Car Dealing & PC Parts © 2025</p>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-rm">RM</span>
+        <span class="logo-divider">/</span>
+        <span class="logo-garage">GARAGE</span>
+      </div>
+      <p class="footer-text">RM GARAGE © 2025</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/RMCarDealingAndPcParts/" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
