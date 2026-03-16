@@ -1,79 +1,58 @@
-## RM Garage PH
+# RM GARAGE 
 
-RM Garage PH is a modern and responsive website designed to showcase cars and provide a direct and simple way for customers to inquire about services. The project focuses on clean UI, strong branding, and improved user experience.
+Modernized the site to look clean and presentable. TL;DR: less glow, more clarity.
+
+---
+
+## Table of Contents
+- [Overview](#overview)
+- [Changes](#changes)
+- [Files Touched](#files-touched)
+- [How to View](#how-to-view)
+- [What Stayed the Same](#what-stayed-the-same)
+- [Optional Next Steps](#optional-next-steps)
+- [Credits](#credits)
+
+---
 
 ## Overview
+The design was refreshed with a neutral dark theme, subtle borders, and a clear red accent. The goal was to make it look like a professional dealership site without changing any functionality.
 
-- This project was redesigned to improve visual consistency, layout structure, and overall usability. The interface features a Red Bull–inspired color theme, enhanced spacing, and a smoother browsing experience.
+---
 
-- The goal of this project is to create a more comfortable, modern, and presentable design that reflects my personal development style while maintaining usability and professionalism.
+## Changes
+- Theme: cleaner dark palette with red accent
+- Reduced glow, gradients, heavy shadows
+- Navbar: subtle borders, simpler hovers
+- Hero: solid, readable titles; minimal badge
+- Buttons: primary solid red; secondary outlined
+- Car cards: lighter borders, small hover lift, simple badges
+- Filters: modern inputs, clear focus states
+- Reviews: simplified cards (no giant quote overlay)
+- Contact: crisp inputs, toned-down labels
+- Footer: clean surface, simple social icons
 
-- This project is still under active development, and more features and improvements will be added in the future.
+---
 
-## Features
+## Files Touched
+- `style.css` — appended modern style overrides at the end
+- No changes to `index.html` or `script.js`
 
-- UI and Design Improvements
-- Updated Red Bull-inspired colorway
-- Custom animated loading screen
-- Light and Dark mode toggle
-- Improved layout spacing and alignment
-- Cleaner and more modern interface
-- User Experience Enhancements
-- Simplified navigation structure
-- Direct and easy car viewing section
-- Streamlined contact section for faster inquiries
-- Mobile-responsive design
-- Performance Enhancements
-- Optimized loading behavior
-- Smooth theme switching
-- Cleaner and organized component structure
+## How to View
+1. Open `index.html` in any browser.
+2. No build or dependencies required.
 
-## Tech Stack
+## What Stayed the Same
+- All page content in `index.html`
+- Slideshow, filters, smooth scroll, and contact mailto in `script.js`
+- Images, map, links, and overall structure
 
-- HTML
-- CSS / Tailwind CSS
-- JavaScript
-- Netlify (Deployment)
+## Optional Next Steps
+- Swap fonts to Inter or DM Sans
+- Add a mobile menu toggle
+- Tone down or remove the loading screen
 
-You may modify this section depending on your actual stack (React, Vite, etc.).
+---
 
-## Installation
-
-Clone the repository:
-- git clone https://github.com/your-username/your-repository-name.git
-
-Navigate to the project folder:
-- cd your-repository-name
-
-Install dependencies (if using npm):
-- npm install
-
-Run the development server:
-- npm run dev
-
-## Deployment
-- This project is deployed using Netlify.
-
-To deploy:
-- Connect your GitHub repository to Netlify
-- Set build command (if required)
-- Set publish directory
-
-## Deploy
-
-## Future Improvements
-
-Additional UI refinements for a more modern look
-
-- More interactive features
-- Enhanced animations and transitions
-
-## Status
-
-- Project Status: In Progress
-This project is continuously being improved to enhance usability, performance, and overall design quality.
-
-## Author
-
-Developed and maintained by
-Miguel V. Pilapil
+## Credits
+Taste and minimal effort. Done. 😴
