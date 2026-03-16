@@ -1605,3 +1605,302 @@ body.dark .contact-wrapper textarea {
     font-size: 1rem;
   }
 }
+
+:root {
+  --redbull-navy: #0f1318;
+  --redbull-navy-bright: #1f2937;
+  --redbull-red: #e63946;
+  --redbull-red-vibrant: #ff4d4f;
+  --redbull-yellow: #ffd166;
+  --redbull-silver: #9aa4b2;
+  --redbull-dark: #0b0e12;
+  --redbull-white: #ffffff;
+  --text-primary: #eaeef2;
+  --text-secondary: #94a3b8;
+  --bg-dark: #0b0e12;
+  --bg-card: rgba(17, 21, 30, 0.92);
+}
+
+body {
+  background: linear-gradient(180deg, #0b0e12 0%, #0f1318 100%);
+}
+
+body::before {
+  background: none;
+}
+
+.navbar {
+  background: rgba(15,19,24,0.95);
+  border-bottom: 1px solid #1f2937;
+  box-shadow: none;
+}
+
+.logo-rm,
+.logo-garage {
+  text-shadow: none;
+}
+
+.logo-rm {
+  color: var(--redbull-red);
+}
+
+.logo-garage {
+  color: var(--text-primary);
+}
+
+.nav-link {
+  color: var(--text-primary);
+}
+
+.nav-link:hover {
+  color: var(--redbull-red);
+  text-shadow: none;
+}
+
+.nav-link::after {
+  background: var(--redbull-red);
+}
+
+.hero-card {
+  background: var(--bg-card);
+  border: 1px solid #1f2937;
+  box-shadow: none;
+}
+
+.hero-card::before {
+  content: none;
+}
+
+.hero-badge {
+  background: transparent;
+  border: 1px solid var(--redbull-red);
+  color: var(--redbull-red);
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.hero-title-main,
+.hero-title-sub {
+  color: var(--text-primary);
+  -webkit-text-fill-color: initial;
+  background: none;
+  filter: none;
+  letter-spacing: 4px;
+}
+
+.hero-tagline {
+  color: var(--text-secondary);
+}
+
+.hero-slideshow {
+  background: transparent;
+}
+
+.section-number {
+  color: var(--redbull-red);
+  text-shadow: none;
+}
+
+.heading {
+  letter-spacing: 2px;
+}
+
+.section-line {
+  width: 64px;
+  height: 3px;
+  background: var(--redbull-red);
+  box-shadow: none;
+}
+
+.btn {
+  border-radius: 12px;
+}
+
+.btn-primary {
+  background: var(--redbull-red);
+  color: #ffffff;
+  border: 0;
+  box-shadow: none;
+  transform: none;
+}
+
+.btn-primary::before {
+  content: none;
+}
+
+.btn-primary:hover {
+  background: var(--redbull-red-vibrant);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border: 1px solid #334155;
+  box-shadow: none;
+}
+
+.btn-secondary::before {
+  content: none;
+}
+
+.btn-secondary:hover {
+  border-color: var(--redbull-red);
+  color: var(--redbull-red);
+  transform: translateY(-2px);
+}
+
+.filters .filter-group i {
+  color: var(--text-secondary);
+  filter: none;
+}
+
+#searchInput,
+#priceFilter {
+  background: rgba(15,19,24,0.95);
+  border: 1px solid #1f2937;
+  color: var(--text-primary);
+  backdrop-filter: none;
+}
+
+#searchInput:focus,
+#priceFilter:focus {
+  border-color: var(--redbull-red);
+  box-shadow: none;
+}
+
+.car-card {
+  background: var(--bg-card);
+  border: 1px solid #1f2937;
+  box-shadow: none;
+}
+
+.car-card::before {
+  content: none;
+}
+
+.car-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--redbull-red);
+  box-shadow: none;
+}
+
+.car-number {
+  color: rgba(148,163,184,0.25);
+  text-shadow: none;
+}
+
+.badge {
+  backdrop-filter: none;
+}
+
+.badge.available {
+  background: transparent;
+  border: 1px solid var(--redbull-red);
+  color: var(--redbull-red);
+  box-shadow: none;
+  text-shadow: none;
+}
+
+.badge.sold {
+  background: rgba(51,65,85,0.3);
+  border: 1px solid #94a3b8;
+  color: #94a3b8;
+  box-shadow: none;
+}
+
+.car-header h2 {
+  letter-spacing: 1px;
+}
+
+.car-year {
+  color: var(--text-secondary);
+  text-shadow: none;
+}
+
+.price {
+  color: var(--redbull-red);
+  text-shadow: none;
+}
+
+.specs li i {
+  color: var(--text-secondary);
+  filter: none;
+}
+
+.desc {
+  color: var(--text-secondary);
+}
+
+.review-card {
+  background: var(--bg-card);
+  border: 1px solid #1f2937;
+  box-shadow: none;
+}
+
+.review-card::before {
+  content: none;
+}
+
+.review-card:hover {
+  border-color: var(--redbull-red);
+  box-shadow: none;
+}
+
+.review-card h3 {
+  color: var(--text-primary);
+  text-shadow: none;
+}
+
+.stars {
+  color: var(--redbull-red);
+  filter: none;
+}
+
+.contact-wrapper,
+.map-wrapper {
+  background: var(--bg-card);
+  border: 1px solid #1f2937;
+}
+
+.form-group label {
+  color: var(--text-secondary);
+  text-shadow: none;
+}
+
+.contact-wrapper input,
+.contact-wrapper textarea {
+  background: rgba(15,19,24,0.95);
+  border: 1px solid #1f2937;
+}
+
+.contact-wrapper input:focus,
+.contact-wrapper textarea:focus {
+  border-color: var(--redbull-red);
+  box-shadow: none;
+}
+
+.map-container {
+  border: 1px solid #1f2937;
+}
+
+.footer {
+  background: rgba(15,19,24,0.95);
+  border-top: 1px solid #1f2937;
+  box-shadow: none;
+}
+
+.footer-social a {
+  background: transparent;
+  border: 1px solid #334155;
+  color: var(--text-primary);
+  box-shadow: none;
+}
+
+.footer-social a:hover {
+  background: var(--redbull-red);
+  border-color: var(--redbull-red);
+  color: #ffffff;
+  box-shadow: none;
+  transform: translateY(-2px);
+}
