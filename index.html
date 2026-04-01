@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RM Car Dealing & PC Parts</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+</head>
+<body>
+  
+<!-- Header -->
+<header class="navbar">
+  <div class="nav-left">
+    <!-- Logo with synced glow -->
+    <img src="image/LOGO.png" alt="Logo" class="logo-img glow-sync">
+    <span class="brand-name">RM GARAGE</span>
+  </div>
+
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#for-sale">FOR SALE</a>
+    <a href="#reviews">REVIEWS</a>
+    <a href="#contact">CONTACT</a>
+    <a href="#about">ABOUT</a>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-content">
+    <img src="image/LOGO.png" alt="Hero Logo" class="hero-logo">
+    <h1 id="hero-text">“Street. Daily. Family. Your Ride Awaits!”</h1>
+    <p class="spacer"></p>
+    <p class="spacer"></p>
+    <a href="#for-sale" class="btn">EXPLORE NOW!</a>
+  </div>
+</section>
+
+  <!-- For Sale -->
+  <section id="for-sale" class="for-sale">
+    <h1 class="heading"><i class="fas fa-car"></i> RM: FOR SALE UNITS</h1>
+    
+    <!-- Search/Filter -->
+    <div class="filters">
+      <input type="text" id="searchInput" placeholder="Search cars/bikes...">
+      <select id="priceFilter">
+        <option value="all">All Prices</option>
+        <option value="low">Below ₱250k</option>
+        <option value="mid">₱250k - ₱400k</option>
+        <option value="high">Above ₱400k</option>
+      </select>
+    </div>
+
+    <div id="carList" class="car-list">
+
+    <!-- 1997 Honda Civic VTi VTEC (PH16A) -->
+    <div class="car-card fade-in" id="civic" data-name="Honda Civic VTi VTEC" data-price="210000">
+      <div class="car-image-wrap">
+        <img src="image/HONDA CIVIC.jpg" alt="1997 Honda Civic VTi"/>
+        <span class="badge available">Available</span>
+      </div>
+      <h2>1997 Honda Civic VTi VTEC (PH16A) </h2>
+      <div class="car-meta">
+        <span class="price">190,000 (Negotiable) </span>
+        <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+      </div>
+      <ul class="specs">
+        <li><i class="fas fa-check-circle"></i> All stock engine – 1st owner</li>
+        <li><i class="fas fa-check-circle"></i> Fresh repaint – gas & go</li>
+        <li><i class="fas fa-check-circle"></i> Cold AC, power windows & mirrors</li>
+        <li><i class="fas fa-check-circle"></i> Type R seats, MOMO steering wheel</li>
+        <li><i class="fas fa-check-circle"></i> JBL + Pioneer sound setup</li>
+        <li><i class="fas fa-check-circle"></i> Registered until 2026, complete papers</li>
+      </ul>
+      <p class="desc">Fresh, reliable, and ready – perfect for daily use or tambay!</p>
+      <button class="btn" onclick="window.open('https://www.facebook.com/RMGarageDeals', '_blank')">Inquire</button>
+      <div class="trust">
+        <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+      </div>
+    </div>
+
+      <!-- 2005 Mitsubishi GSR 2-Door -->
+  <div class="car-card fade-in" id="mitsubishi-gsr-2005" data-name="Mitsubishi GSR 2-Door" data-price="168000">
+    <div class="car-image-wrap">
+      <img src="image/GSR 2005.jpeg" alt="2005 Mitsubishi GSR 2-Door"/>
+      <span class="badge available">Available</span>
+    </div>
+    <h2>2005 Mitsubishi GSR 2-Door</h2>
+    <div class="car-meta">
+      <span class="price">₱168,000</span>
+      <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+    </div>
+    <ul class="specs">
+      <li><i class="fas fa-check-circle"></i> Registered – Top of the Line GSR</li>
+      <li><i class="fas fa-check-circle"></i> 130k kms (legit mileage)</li>
+      <li><i class="fas fa-check-circle"></i> Manual transmission</li>
+      <li><i class="fas fa-check-circle"></i> All-black interior w/ blue upholstery seats</li>
+      <li><i class="fas fa-check-circle"></i> Keyless entry – all working</li>
+    </ul>
+    <ul class="specs">
+      <li><i class="fas fa-check-circle"></i> Android head unit + back camera</li>
+      <li><i class="fas fa-check-circle"></i> RalliArt shift knob + shift cover</li>
+      <li><i class="fas fa-check-circle"></i> Wooden steering wheel (classic touch)</li>
+      <li><i class="fas fa-check-circle"></i> Clean look & solid stance</li>
+    </ul>
+    <p class="desc">Fresh, reliable, and sulit – perfect pang-daily o pang-project build! ⚡</p>
+      <button class="btn" onclick="window.open('https://www.facebook.com/RMGarageDeals', '_blank')">Inquire</button>
+    <div class="trust">
+      <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+    </div>
+  </div>
+
+    <!-- 2003 Honda CR-V Gen 2 -->
+    <div class="car-card fade-in" id="honda-crv-2003" data-name="Honda CR-V Gen 2" data-price="185000">
+      <div class="car-image-wrap">
+        <img src="image/CRV GEN 2.jpg" alt="2003 Honda CR-V Gen 2"/>
+        <span class="badge available">Available</span>
+      </div>
+      <h2>2003 Honda CR-V Gen 2</h2>
+      <div class="car-meta">
+        <span class="price">₱185,000 <span style="font-size:0.9em;">(Negotiable)</span></span>
+        <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+      </div>
+      <ul class="specs">
+        <li><i class="fas fa-check-circle"></i> Automatic transmission – smooth shifting</li>
+        <li><i class="fas fa-check-circle"></i> Complete legal documents (Original OR/CR)</li>
+        <li><i class="fas fa-check-circle"></i> Open Deed of Sale from 1st owner</li>
+        <li><i class="fas fa-check-circle"></i> New LTO white plate</li>
+        <li><i class="fas fa-check-circle"></i> Registered & ready to use</li>
+      </ul>
+      <p class="desc">Reliable daily SUV – spacious, durable, and sulit for family or negosyo!</p>
+     <button class="btn" onclick="window.open('https://www.facebook.com/RMGarageDeals', '_blank')">Inquire</button>
+      <div class="trust">
+        <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+      </div>
+    </div>
+
+        <!-- 2007 BMW 335i Coupe (US Version) -->
+    <div class="car-card fade-in" id="bmw335i2007" data-name="BMW 335i Coupe" data-price="1880000">
+      <div class="car-image-wrap">
+        <img src="image/BMW 35I N54 TWIN TURBO.jpeg" alt="2007 BMW 335i Coupe (US Version)"/>
+        <span class="badge available">Available</span>
+      </div>
+      <h2>2007 BMW 335i Coupe (US Version)</h2>
+      <div class="car-meta">
+        <span class="price">₱1,880,000</span>
+        <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+      </div>
+      <ul class="specs">
+        <li><i class="fas fa-check-circle"></i> 3.0L N54 Twin-Turbo | 306 hp (stock)</li>
+        <li><i class="fas fa-check-circle"></i> Driven 36k kms (original, untampered)</li>
+        <li><i class="fas fa-check-circle"></i> Automatic Transmission | Gasoline</li>
+        <li><i class="fas fa-check-circle"></i> Black Exterior | Black Interior</li>
+        <li><i class="fas fa-check-circle"></i> Complete Docs + Free Transfer of Ownership</li>
+        <li><i class="fas fa-check-circle"></i> Updated Registration</li>
+        <li><i class="fas fa-check-circle"></i> 18” Style 189 Rims w/ Brand New Michelin Pilot Sport 5</li>
+        <li><i class="fas fa-check-circle"></i> Sport Suspension</li>
+        <li><i class="fas fa-check-circle"></i> Xenon Headlights</li>
+        <li><i class="fas fa-check-circle"></i> Power Electronic Sunroof</li>
+        <li><i class="fas fa-check-circle"></i> Preventive Maintenance Recently Done</li>
+      </ul>
+      <p class="desc">US Version 335i Coupe – low mileage, twin-turbo power, and well-maintained with fresh upgrades!</p>
+      <button class="btn" onclick="window.open('https://www.facebook.com/RMGarageDeals', '_blank')">Inquire</button>
+      <div class="trust">
+        <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+      </div>
+    </div>
+
+        <!-- 2016 Volkswagen Jetta Business Edition -->
+    <div class="car-card fade-in" id="jetta2016" data-name="Volkswagen Jetta Business Edition" data-price="485000">
+      <div class="car-image-wrap">
+        <img src="image/VOLKSWAGEN GLI JETTA.jpeg" alt="2016 Volkswagen Jetta Business Edition"/>
+        <span class="badge available">Available</span>
+      </div>
+      <h2>2016 Volkswagen Jetta Business Edition</h2>
+      <div class="car-meta">
+        <span class="price">₱485,000</span>
+        <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+      </div>
+      <ul class="specs">
+        <li><i class="fas fa-check-circle"></i> 1.6 Turbo Diesel | Automatic | 178 hp</li>
+        <li><i class="fas fa-check-circle"></i> Driven 43k kms – 1st Owner</li>
+        <li><i class="fas fa-check-circle"></i> Silver Exterior | Black Interior</li>
+        <li><i class="fas fa-check-circle"></i> Full GLI body kits + brand new 19” rims (₱200k) w/ Falken tires</li>
+        <li><i class="fas fa-check-circle"></i> ST Adjustable Coilovers</li>
+        <li><i class="fas fa-check-circle"></i> All LED Lights | Very Cold AC</li>
+        <li><i class="fas fa-check-circle"></i> Maintained by Silverstern</li>
+        <li><i class="fas fa-check-circle"></i> Complete Docs | 2 Original Keys</li>
+        <li><i class="fas fa-check-circle"></i> No Underchassis Issues | Guaranteed Fresh</li>
+      </ul>
+      <p class="desc">FOR SALE or SWAP – Super fresh Jetta with premium upgrades, ready for transfer!</p>
+      <button class="btn" onclick="window.open('https://www.facebook.com/RMGarageDeals', '_blank')">Inquire</button>
+      <div class="trust">
+        <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+      </div>
+    </div>
+
+            <!-- 2015 Mercedes-Benz GL350 CDI AMG (Luxury SUV) -->
+    <div class="car-card fade-in" id="gl3502015" data-name="Mercedes-Benz GL350 CDI AMG" data-price="2130000">
+      <div class="car-image-wrap">
+        <img src="image/MERCEDES BENZ GL350 CDI AMG.jpeg" alt="2015 Mercedes-Benz GL350 CDI AMG (Luxury SUV)"/>
+        <span class="badge available">Available</span>
+      </div>
+      <h2>2015 Mercedes-Benz GL350 CDI AMG (Luxury SUV)</h2>
+      <div class="car-meta">
+        <span class="price">₱2,130,000</span>
+        <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+      </div>
+      <ul class="specs">
+        <li><i class="fas fa-check-circle"></i> Driven 67k kms | 2 Owners</li>
+        <li><i class="fas fa-check-circle"></i> 7-Speed Shiftable Automatic | Diesel</li>
+        <li><i class="fas fa-check-circle"></i> 3.0L V6 Engine | 250 hp</li>
+        <li><i class="fas fa-check-circle"></i> Black Exterior | Off-White Interior</li>
+        <li><i class="fas fa-check-circle"></i> Casa Maintained | Well-Kept Unit</li>
+        <li><i class="fas fa-check-circle"></i> Advanced Safety Features</li>
+        <li><i class="fas fa-check-circle"></i> Cruise Control | Soft-Close Doors</li>
+        <li><i class="fas fa-check-circle"></i> Brand New Air Suspension</li>
+        <li><i class="fas fa-check-circle"></i> Sunroof</li>
+        <li><i class="fas fa-check-circle"></i> 8-Way Power Driver & Passenger Seats</li>
+        <li><i class="fas fa-check-circle"></i> Leather + Alloy Steering Wheel</li>
+        <li><i class="fas fa-check-circle"></i> Designo Wood/Leather Trim</li>
+        <li><i class="fas fa-check-circle"></i> Harman Kardon Premium Sound System</li>
+      </ul>
+      <p class="desc">FOR SALE or SWAP – Luxury AMG SUV with premium features, fresh condition, and swap option for LC200/LC Prado.</p>
+      <button class="btn" onclick="window.open('https://www.facebook.com/RMGarageDeals', '_blank')">Inquire</button>
+      <div class="trust">
+        <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+      </div>
+    </div>
+
+      <!-- 2016 Toyota Alphard 3.5 V6 -->
+  <div class="car-card fade-in" id="alphard2016" data-name="Toyota Alphard 3.5 V6" data-price="1630000">
+    <div class="car-image-wrap">
+      <img src="image/TOYOTA ALPHARD.jpg" alt="2016 Toyota Alphard 3.5 V6"/>
+      <span class="badge available">Available</span>
+    </div>
+    <h2>2016 Toyota Alphard 3.5 V6</h2>
+    <div class="car-meta">
+      <span class="price">₱1,630,000</span>
+      <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+    </div>
+    <ul class="specs">
+      <li><i class="fas fa-check-circle"></i> Driven 92k kms | 2 Owners | With Casa Records</li>
+      <li><i class="fas fa-check-circle"></i> Automatic Transmission | Gasoline</li>
+      <li><i class="fas fa-check-circle"></i> 3.5L V6 Engine | 198 hp</li>
+      <li><i class="fas fa-check-circle"></i> Black Exterior | Beige Interior</li>
+      <li><i class="fas fa-check-circle"></i> Registered Under My Name</li>
+      <li><i class="fas fa-check-circle"></i> Full Options | Guaranteed Fresh In & Out</li>
+      <li><i class="fas fa-check-circle"></i> Power Sunroof, Sliding Doors & Tailgate</li>
+      <li><i class="fas fa-check-circle"></i> Push Start Engine | Keyless Entry</li>
+      <li><i class="fas fa-check-circle"></i> Power Retractable Side Mirrors</li>
+      <li><i class="fas fa-check-circle"></i> Back & Front Sensors | Super Cold Aircon</li>
+      <li><i class="fas fa-check-circle"></i> Flawless Paint | Super Fresh Interior</li>
+      <li><i class="fas fa-check-circle"></i> 4 Pcs Brand New Michelin Tires</li>
+    </ul>
+    <p class="desc">FOR SALE or TRADE – Premium Alphard with full options, luxury comfort, and fresh condition.</p>
+    <button class="btn" onclick="window.open('https://www.facebook.com/RMGarageDeals', '_blank')">Inquire</button>
+    <div class="trust">
+      <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+    </div>
+  </div>
+
+    <!-- 2016 Toyota Fortuner V 4x2 -->
+    <div class="car-card fade-in" id="fortuner2016" data-name="Toyota Fortuner V" data-price="950000">
+      <div class="car-image-wrap">
+        <img src="image/TOYOTA FORTUNER V 4X2.jpg" alt="2016 Toyota Fortuner V 4x2"/>
+        <span class="badge available">Available</span>
+      </div>
+      <h2>2016 Toyota Fortuner V 4x2</h2>
+      <div class="car-meta">
+        <span class="price">₱950,000</span>
+        <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+      </div>
+      <ul class="specs">
+        <li><i class="fas fa-check-circle"></i> 49k kms only – First Owned</li>
+        <li><i class="fas fa-check-circle"></i> 100% Original Paint</li>
+        <li><i class="fas fa-check-circle"></i> Brand New TEIN Coilovers</li>
+        <li><i class="fas fa-check-circle"></i> Brand New Wheels & Tires</li>
+        <li><i class="fas fa-check-circle"></i> Ceramic Tint</li>
+        <li><i class="fas fa-check-circle"></i> Super Fresh Interior</li>
+      </ul>
+      <p class="desc">Low mileage + fresh upgrades = sulit deal for a premium SUV!</p>
+     <button class="btn" onclick="window.open('https://www.facebook.com/RMGarageDeals', '_blank')">Inquire</button>
+      <div class="trust">
+        <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+      </div>
+    </div>
+
+    <!-- 2016 Toyota FJ Cruiser 4.0L V6 4x4 A/T (SOLD) -->
+    <div class="car-card sold fade-in" id="fjcruiser" data-name="Toyota FJ Cruiser" data-price="1780000">
+      <div class="car-image-wrap">
+        <img src="image/TOYOTA FJ CRUISER.jpg" alt="2016 Toyota FJ Cruiser"/>
+        <span class="badge sold">SOLD! ⚡️</span>
+      </div>
+      <h2>2016 Toyota FJ Cruiser 4.0L V6 4x4 A/T <span class="sold-text">(SOLD)</span></h2>
+      <div class="car-meta">
+        <span class="price"><del>₱1,780,000 (negotiable)</del></span>
+        <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+      </div>
+      <ul class="specs">
+        <li><i class="fas fa-check-circle"></i> 47k kms only, fresh PMS done</li>
+        <li><i class="fas fa-check-circle"></i> Brand new Amaron battery</li>
+        <li><i class="fas fa-check-circle"></i> 100% orig paint, complete papers</li>
+        <li><i class="fas fa-check-circle"></i> Old Man Emu BP-51 suspension + UCAs</li>
+        <li><i class="fas fa-check-circle"></i> SCS wheels + BFGoodrich KM3 set of 5</li>
+        <li><i class="fas fa-check-circle"></i> Borla headers + full Borla exhaust</li>
+        <li><i class="fas fa-check-circle"></i> AFE Momentum GT intake</li>
+        <li><i class="fas fa-check-circle"></i> Stage 4 projector retrofit headlights</li>
+        <li><i class="fas fa-check-circle"></i> ₱200K sound setup – Pioneer Z5050, Focal, Crescendo</li>
+      </ul>
+      <p class="desc">✅ This unit has been <strong>SOLD</strong>. Thank you for the inquiries! 🚙💨</p>
+      <div class="trust">
+        <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+      </div>
+    </div>
+
+
+    <!-- 2016 Toyota FJ Cruiser 4.0L V6 4x4 A/T (SOLD) -->
+    <div class="car-card sold fade-in" id="fjcruiser" data-name="Toyota FJ Cruiser" data-price="1780000">
+      <div class="car-image-wrap">
+        <img src="image/TOYOTA FJ CRUISER.jpg" alt="2016 Toyota FJ Cruiser"/>
+        <span class="badge sold">SOLD! ⚡️</span>
+      </div>
+      <h2>2016 Toyota FJ Cruiser 4.0L V6 4x4 A/T</h2>
+      <div class="car-meta">
+        <span class="price">₱1,780,000 <span style="font-size:0.9em;">(negotiable)</span></span>
+        <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+      </div>
+      <ul class="specs">
+        <li><i class="fas fa-check-circle"></i> 47k kms only, fresh PMS done</li>
+        <li><i class="fas fa-check-circle"></i> Brand new Amaron battery</li>
+        <li><i class="fas fa-check-circle"></i> 100% orig paint, complete papers</li>
+        <li><i class="fas fa-check-circle"></i> Old Man Emu BP-51 suspension + UCAs</li>
+        <li><i class="fas fa-check-circle"></i> SCS wheels + BFGoodrich KM3 set of 5</li>
+        <li><i class="fas fa-check-circle"></i> Borla headers + full Borla exhaust</li>
+        <li><i class="fas fa-check-circle"></i> AFE Momentum GT intake</li>
+        <li><i class="fas fa-check-circle"></i> Stage 4 projector retrofit headlights</li>
+        <li><i class="fas fa-check-circle"></i> ₱200K sound setup – Pioneer Z5050, Focal, Crescendo</li>
+      </ul>
+      <p class="desc">Solid, built, and loaded – ready to roll! 🚙💨<br>📩 Open to trade + cash offers</p>
+      <div class="trust">
+        <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+      </div>
+    </div>
+
+      <!-- 2016 Toyota Land Cruiser LC200 (SOLD) -->
+      <div class="car-card sold fade-in" id="lc200" data-name="Toyota Land Cruiser LC200" data-price="3815000">
+        <div class="car-image-wrap">
+          <img src="image/TOYOTA LC200.jpg" alt="2016 Toyota Land Cruiser LC200"/>
+          <span class="badge sold">SOLD! ⚡️</span>
+        </div>
+        <h2>2016 Toyota Land Cruiser LC200</h2>
+        <div class="car-meta">
+          <span class="price">₱3,815,000 <span style="font-size:0.9em;">(negotiable)</span></span>
+          <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+        </div>
+        <ul class="specs">
+          <li><i class="fas fa-check-circle"></i> 4.5L V8 Turbo Diesel, 4x4 AT</li>
+          <li><i class="fas fa-check-circle"></i> 128k kms, Toyota Commonwealth maintained</li>
+          <li><i class="fas fa-check-circle"></i> 100% orig paint, fresh in & out</li>
+          <li><i class="fas fa-check-circle"></i> Beige leather interior, 2 headrest monitors</li>
+          <li><i class="fas fa-check-circle"></i> 20" OEM rims + Dunlop Grandtrek (almost new)</li>
+          <li><i class="fas fa-check-circle"></i> Ice-cold AC, no underchassis issues</li>
+          <li><i class="fas fa-check-circle"></i> 2 orig keys, updated reg, free transfer</li>
+        </ul>
+        <p class="desc">Luxury + durability – built to last! 🚙💨<br>📩 Open for trade (with cash top-up)</p>
+        <div class="trust">
+          <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+        </div>
+      </div>
+
+      <!-- Move CR-V inside here -->
+      <div class="car-card sold fade-in" id="crv1998" data-name="Honda CR-V Gen 1" data-price="165000">
+        <div class="car-image-wrap">
+          <img src="image/CRV GEN 1.jpg" alt="1998 Honda CR-V Gen 1"/>
+          <span class="badge sold">SOLD! ⚡️</span>
+        </div>
+        <h2>1998 Honda CR-V Gen 1 (4WD, Automatic)</h2>
+        <div class="car-meta">
+          <span class="price">₱165,000 (FIXED)</span>
+          <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+        </div>
+        <ul class="specs">
+          <li><i class="fas fa-check-circle"></i> 4WD Automatic | 135k Odo</li>
+          <li><i class="fas fa-check-circle"></i> Registered until Jan 2026</li>
+          <li><i class="fas fa-check-circle"></i> Strong engine & smooth shifting</li>
+          <li><i class="fas fa-check-circle"></i> No leaks | Cold A/C | New timing belt & oil change</li>
+          <li><i class="fas fa-check-circle"></i> Upgraded sound system (Xplod + Amp + Pioneer HU)</li>
+          <li><i class="fas fa-check-circle"></i> 16” mags | Rare grille with fog lamps</li>
+          <li><i class="fas fa-check-circle"></i> Proven for long drives – no overheating</li>
+        </ul>
+        <p class="desc">Solid, reliable, and ready to drive! 🚙💨</p>
+        <div class="trust">
+          <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+        </div>
+        </div>
+
+    <!-- Mitsubishi GSR 2-Door (1998) -->
+        <div class="car-card sold fade-in" id="mitsubishiGSR" data-name="Mitsubishi GSR 2-Door" data-price="155000">
+          <div class="car-image-wrap">
+            <img src="image/GSR 1998.jpg" alt="1998 Mitsubishi GSR 2-Door"/>
+            <span class="badge sold">SOLD! ⚡️</span>
+          </div>
+          <h2>Mitsubishi GSR 2-Door (1998 Model)</h2>
+          <div class="car-meta">
+            <span class="price">₱155,000 (FIXED)</span>
+            <span class="location"><i class="fas fa-map-marker-alt"></i> Quezon City</span>
+          </div>
+          <ul class="specs">
+            <li><i class="fas fa-check-circle"></i> Manual transmission</li>
+            <li><i class="fas fa-check-circle"></i> Partida, di pa pinaliguan yan</li>
+            <li><i class="fas fa-check-circle"></i> Fresh Championship White paint (strip to metal – worth ₱80K!)</li>
+            <li><i class="fas fa-check-circle"></i> Black interior – all intact & clean</li>
+            <li><i class="fas fa-check-circle"></i> All working – walang isyu, sakay na lang!</li>
+            <li><i class="fas fa-check-circle"></i> 15” ROTA Spider mags – swabeng porma</li>
+            <li><i class="fas fa-check-circle"></i> Mirage trunk installed – mas malinis na look</li></li>
+          </ul>
+          <p class="desc">Alagang-alaga at pormado — sakto sa mga naghahanap ng classic na pwedeng i-daily o i-project</p>
+          <div class="trust">
+            <i class="fas fa-shield-alt"></i> Safe & Verified Seller
+          </div>
+        </div>
+  </div>
+</div>
+</section>
+
+<!-- Reviews -->
+<section class="reviews" id="reviews">
+  <h1 class="heading"><i class="fas fa-comments"></i> Client Reviews</h1>
+  
+  <div class="review-slider">
+    <div class="review-track">
+      
+      <div class="review-card">
+        <p>"I was nervous about buying my first car, but RM GARAGE made it simple. Walang hassle sa proseso, very smooth."</p>
+        <h3>– Mark D.</h3>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      
+      <div class="review-card">
+        <p>"Mabilis ang transaction, maayos lahat ng papers, and I was able to drive my car agad the same day. Salamat RM GARAGE!"</p>
+        <h3>– Carlo P.</h3>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      
+      <div class="review-card">
+        <p>"Maganda ang presyo compared sa ibang nakita ko online. Bonus pa na may tips sila sa car care and maintenance."</p>
+        <h3>– Bryan K.</h3>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+      
+      <div class="review-card">
+        <p>"Super accommodating staff, and the car I got was in excellent condition. Highly recommend RM GARAGE!"</p>
+        <h3>– Jenny L.</h3>
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+      </div>
+    </div>
+
+    <!-- Dots -->
+    <div class="review-dots"></div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact-section">
+  <div class="contact-flex">
+    <div class="contact-wrapper">
+      <h1 class="heading"><i class="fas fa-envelope"></i> Contact Us</h1>
+
+      <!-- 🚧 Temporarily disabled form -->
+      <!--
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+      -->
+
+      <!-- Development Note -->
+      <div class="under-construction">
+        <i class="fas fa-tools"></i>
+        <p>🚧 This section is still under development. 🚧</p>
+        <p>Please reach us directly via our 
+          <a href="https://www.facebook.com/RMGarageDeals" target="_blank">Facebook Page</a> 
+          for inquiries.
+        </p>
+      </div>
+    </div>
+
+    <div class="map-wrapper">
+      <h2 class="map-title">Our Location</h2>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps?q=M3H2+HG8,+Philand+Dr,+Quezon+City,+Metro+Manila,+Philippines&output=embed"
+          width="100%"
+          height="320"
+          style="border:0; border-radius:14px;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section class="about" id="about">
+  <h1 class="heading">
+    <i class="fas fa-info-circle"></i> ABOUT: RM GARAGE! ⚡️
+  </h1>
+  <div class="about-content">
+    <p>Welcome to <strong>RM GARAGE</strong>, your go to for reliable pre-owned cars and motorcycles in the Philippines. Every vehicle is carefully inspected to ensure quality and value.</p>
+    <p class="spacer"></p>
+    <p>From city cars to SUVs and motorcycles, we have options for every lifestyle. Our team guides you for a smooth and confident purchase.</p>
+    <p>Experience hassle free car buying with RM GARAGE! where quality meets affordability!</p>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>RM GARAGE © 2025</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+<div class="floating-social">
+  <a href="https://www.facebook.com/RMCarDealingAndPcParts/" target="_blank" class="social-btn fb">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.instagram.com/RMCarDealingAndPcParts/" target="_blank" class="social-btn ig">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.tiktok.com/@RMCarDealingAndPcParts" target="_blank" class="social-btn tiktok">
+    <i class="fab fa-tiktok"></i>
+  </a>
+  <a href="https://wa.me/+63 906 401 5873" target="_blank" class="social-btn whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+<!-- Floating Social Media -->
+<div class="floating-social">
+  <a href="https://www.facebook.com/RMGarageDeals" target="_blank" class="fb">
+    <i class="fab fa-facebook-f"></i>
+  </a>
+  <a href="https://www.instagram.com/rmgarage_ph/" target="_blank" class="ig">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="https://www.tiktok.com/@RMCarDealingAndPcParts" target="_blank" class="tiktok">
+    <i class="fab fa-tiktok"></i>
+  </a>
+  <a href="https://wa.me/639171234567" target="_blank" class="whatsapp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+</div>
+
+</html>
